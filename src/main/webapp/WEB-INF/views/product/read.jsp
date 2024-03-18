@@ -57,11 +57,11 @@
 
                         <script>
                             document.querySelector(".btn-primary").addEventListener("click", function(e){
-                                self.location = `/product/modify?pno=${dto.pno}&${pageRequestDTO.link}`
+                                self.location = `/product/modify?pno=${dto.pno}&${PageRequestDTO.link}`
                             },false)
 
                             document.querySelector(".btn-secondary").addEventListener("click", function (e) {
-                                self.location = "/product/list?${pageRequestDTO.link}"
+                                self.location = "/product/list?${PageRequestDTO.link}"
                             }, false)
 
                         </script>

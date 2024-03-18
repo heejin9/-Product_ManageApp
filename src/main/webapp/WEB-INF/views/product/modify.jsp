@@ -82,7 +82,7 @@
                             e.preventDefault()
                             e.stopPropagation()
 
-                            formObj.action =`/product/remove?${pageRequestDTO.link}`
+                            formObj.action =`/product/remove?${PageRequestDTO.link}`
                             formObj.method ="post"
 
                             formObj.submit()
@@ -107,7 +107,7 @@
                             e.preventDefault()
                             e.stopPropagation()
 
-                            self.location= `/product/list?${pageRequestDTO.link}`
+                            self.location= `/product/list?${PageRequestDTO.link}`
 
                         },false);
 

@@ -3,14 +3,14 @@ package com.ssg.product.mapper;
 
 import com.ssg.product.domain.ProductVO;
 import com.ssg.product.dto.PageRequestDTO;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
+@Mapper
 public interface ProductMapper { 
 
     void insert(ProductVO productVO);
-
-    List<ProductVO> selectAll();
 
     ProductVO selectOne(Long pno);
 

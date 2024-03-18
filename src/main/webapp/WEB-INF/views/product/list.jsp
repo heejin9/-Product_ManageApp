@@ -62,7 +62,7 @@
                                     <th scope="row"><c:out value="${dto.pno}"/></th>
                                     <td>
                                         <a href="/product/read?pno=${dto.pno}&${pageRequestDTO.link}"
-                                           class="text-decoration-none" data-tno="${dto.pno}">
+                                           class="text-decoration-none" data-pno="${dto.pno}">
                                             <c:out value="${dto.pname}"/>
                                         </a>
                                     </td>
@@ -90,7 +90,7 @@
                                         <a class="page-link" data-num="${num}">${num}</a></li>
                                 </c:forEach>
 
-                                <c:if test="${responseDTO.next}">
+                                <c:if test="${PageResponseDTO.next}">
                                     <li class="page-item">
                                         <a class="page-link" data-num="${responseDTO.end + 1}">Next</a>
                                     </li>
@@ -110,7 +110,7 @@
                                     return
                                 }
                                 const num = target.getAttribute("data-num")
-                                self.location = `/todo/list?page=\${num}}`
+                                self.location = `/ptoduct/list?page=\${num}}`
 
                             }, false)
 

@@ -26,9 +26,10 @@
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
-        <property name="mapperLocations" value="classpath:/mappers/TimeMapper2.xml"></property>
+        <property name="mapperLocations" value="classpath:/mappers/**/*.xml"></property>
     </bean>
 
+    <!--    <context:component-scan base-package="com.ssg.todo"/>-->
     <context:component-scan base-package="com.ssg.product.config"/>
     <context:component-scan base-package="com.ssg.product.service"/>
     <mybatis:scan base-package="com.ssg.product.mapper"></mybatis:scan>
